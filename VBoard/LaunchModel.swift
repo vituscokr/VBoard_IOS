@@ -43,7 +43,7 @@ extension LaunchModel  {
             "passwd": pass
         ]
         
-        let publisher : AnyPublisher<JSON, RequestError> = Router.postLogin.request(parameters: arg)
+        let publisher : AnyPublisher<JSON, RequestError> = Router.postLogin.fetch(parameters: arg)
         
         publisher
             .receive(on: DispatchQueue.main)

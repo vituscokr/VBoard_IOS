@@ -62,7 +62,29 @@ enum Router : URLConvertible {
     }
     
     
-    func request<T:Decodable>(parameters: Parameters? = nil ) -> AnyPublisher<T, RequestError> {
+//    import Foundation
+//    import Combine
+//
+//    struct APIClient {
+//
+//        struct Response<T> { // 1
+//            let value: T
+//            let response: URLResponse
+//        }
+//        
+//        func run<T: Decodable>(_ request: URLRequest) -> AnyPublisher<Response<T>, Error> { // 2
+//            return URLSession.shared
+//                .dataTaskPublisher(for: request) // 3
+//                .tryMap { result -> Response<T> in
+//                    let value = try JSONDecoder().decode(T.self, from: result.data) // 4
+//                    return Response(value: value, response: result.response) // 5
+//                }
+//                .receive(on: DispatchQueue.main) // 6
+//                .eraseToAnyPublisher() // 7
+//        }
+//    }
+    
+    func fetch<T:Decodable>(parameters: Parameters? = nil ) -> AnyPublisher<T, RequestError> {
         
         return APIManager.shared.session.request(self, method: self.httpMethod, parameters: parameters, encoding: self.encoding)
             .validate()
@@ -71,10 +93,11 @@ enum Router : URLConvertible {
             .mapError {
                 RequestError.requestFailError(error: $0 as Error)
             }
+            .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }
     
-    func fetch(parameters: Parameters? = nil , onCompletedHandler:@escaping(_ data:JSON?, RequestError?) ->()) {
+    func request(parameters: Parameters? = nil , onCompletedHandler:@escaping(_ data:JSON?, RequestError?) ->()) {
         
         APIManager.shared.session.request(self, method: self.httpMethod, parameters: parameters, encoding: self.encoding)
         // .validate(statusCode: 200..<300)

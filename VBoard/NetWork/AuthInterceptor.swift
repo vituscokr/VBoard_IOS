@@ -48,7 +48,7 @@ class AuthInterceptor : RequestInterceptor {
             return completion(.doNotRetry)
         }
         
-        Router.patchToken.fetch { data, error in
+        Router.patchToken.request{ data, error in
             
             
             guard error == nil else {

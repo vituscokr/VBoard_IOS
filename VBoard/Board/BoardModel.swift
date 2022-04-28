@@ -69,7 +69,7 @@ class BoardModel : ObservableObject {
             "per": 10
         ]
         
-        let publisher : AnyPublisher <APIResponseList , RequestError> = Router.getBoardList.request(parameters: arg)
+        let publisher : AnyPublisher <APIResponseList , RequestError> = Router.getBoardList.fetch(parameters: arg)
         
         publisher
             .receive(on: DispatchQueue.main)

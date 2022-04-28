@@ -13,10 +13,26 @@ struct MainView: View {
         return ConfigStorage.shared.read(key: .userId)
     }
     var body: some View {
-        VStack {
-            
-            BoardListView()
-            
+        NavigationView{
+            VStack {
+                
+                NavigationLink {
+                    BoardListView()
+                } label: {
+                    
+                    Text("Board")
+                }
+                
+                NavigationLink {
+                    MovieView()
+                } label: {
+                    
+                    Text("Movie")
+                }
+                
+                
+                
+            }
         }
     }
 }
