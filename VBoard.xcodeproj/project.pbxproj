@@ -36,6 +36,9 @@
 		A98F8F76281A1ABB009413EA /* MovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98F8F75281A1ABB009413EA /* MovieView.swift */; };
 		A98F8F78281A1B1F009413EA /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98F8F77281A1B1F009413EA /* MovieModel.swift */; };
 		A98F8F7A281A2CAE009413EA /* MovieAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98F8F79281A2CAE009413EA /* MovieAPI.swift */; };
+		A98F8F7D281A6A88009413EA /* BarcodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98F8F7C281A6A88009413EA /* BarcodeView.swift */; };
+		A98F8F81281A866A009413EA /* CouponBarCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98F8F80281A866A009413EA /* CouponBarCodeView.swift */; };
+		A98F8F83281A86DA009413EA /* LSSButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98F8F82281A86DA009413EA /* LSSButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +91,9 @@
 		A98F8F75281A1ABB009413EA /* MovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieView.swift; sourceTree = "<group>"; };
 		A98F8F77281A1B1F009413EA /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		A98F8F79281A2CAE009413EA /* MovieAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAPI.swift; sourceTree = "<group>"; };
+		A98F8F7C281A6A88009413EA /* BarcodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeView.swift; sourceTree = "<group>"; };
+		A98F8F80281A866A009413EA /* CouponBarCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponBarCodeView.swift; sourceTree = "<group>"; };
+		A98F8F82281A86DA009413EA /* LSSButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSSButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +145,7 @@
 		A976C84D2818E5DB0083D8C6 /* VBoard */ = {
 			isa = PBXGroup;
 			children = (
+				A98F8F7B281A6A5D009413EA /* Barcode */,
 				A98F8F74281A1AA7009413EA /* Movie */,
 				A976C8A0281904E70083D8C6 /* Info.plist */,
 				A976C8A128190EA40083D8C6 /* Board */,
@@ -240,6 +247,16 @@
 				A98F8F77281A1B1F009413EA /* MovieModel.swift */,
 			);
 			path = Movie;
+			sourceTree = "<group>";
+		};
+		A98F8F7B281A6A5D009413EA /* Barcode */ = {
+			isa = PBXGroup;
+			children = (
+				A98F8F82281A86DA009413EA /* LSSButtonStyle.swift */,
+				A98F8F7C281A6A88009413EA /* BarcodeView.swift */,
+				A98F8F80281A866A009413EA /* CouponBarCodeView.swift */,
+			);
+			path = Barcode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,6 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A98F8F83281A86DA009413EA /* LSSButtonStyle.swift in Sources */,
 				A98F8F78281A1B1F009413EA /* MovieModel.swift in Sources */,
 				A98F8F7A281A2CAE009413EA /* MovieAPI.swift in Sources */,
 				A976C8862818E7A80083D8C6 /* LaunchModel.swift in Sources */,
@@ -401,6 +419,8 @@
 				A976C89B2818FA010083D8C6 /* AuthInterceptor.swift in Sources */,
 				A976C84F2818E5DB0083D8C6 /* VBoardApp.swift in Sources */,
 				A976C88C2818E8790083D8C6 /* Config+CoreDataClass.swift in Sources */,
+				A98F8F7D281A6A88009413EA /* BarcodeView.swift in Sources */,
+				A98F8F81281A866A009413EA /* CouponBarCodeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

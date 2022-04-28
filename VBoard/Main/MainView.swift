@@ -31,6 +31,14 @@ struct MainView: View {
                 }
                 
                 
+                NavigationLink {
+                    BarcodeView() 
+                } label: {
+                    Text("Barcode")
+                }
+                
+                
+                
                 
             }
         }
