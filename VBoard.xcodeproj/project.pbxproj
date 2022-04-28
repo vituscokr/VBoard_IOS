@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A95DE36B28190F3000B4C86E /* BoardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95DE36A28190F3000B4C86E /* BoardListView.swift */; };
+		A95DE36D28190F4700B4C86E /* BoardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95DE36C28190F4700B4C86E /* BoardModel.swift */; };
 		A976C84F2818E5DB0083D8C6 /* VBoardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A976C84E2818E5DB0083D8C6 /* VBoardApp.swift */; };
 		A976C8512818E5DB0083D8C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A976C8502818E5DB0083D8C6 /* ContentView.swift */; };
 		A976C8532818E5DC0083D8C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A976C8522818E5DC0083D8C6 /* Assets.xcassets */; };
@@ -16,6 +18,21 @@
 		A976C8652818E5DC0083D8C6 /* VBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A976C8642818E5DC0083D8C6 /* VBoardTests.swift */; };
 		A976C86F2818E5DC0083D8C6 /* VBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A976C86E2818E5DC0083D8C6 /* VBoardUITests.swift */; };
 		A976C8712818E5DC0083D8C6 /* VBoardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A976C8702818E5DC0083D8C6 /* VBoardUITestsLaunchTests.swift */; };
+		A976C87E2818E5FA0083D8C6 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A976C87D2818E5FA0083D8C6 /* LaunchView.swift */; };
+		A976C8802818E76C0083D8C6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A976C87F2818E76C0083D8C6 /* LoginView.swift */; };
+		A976C8842818E7880083D8C6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A976C8832818E7880083D8C6 /* MainView.swift */; };
+		A976C8862818E7A80083D8C6 /* LaunchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A976C8852818E7A80083D8C6 /* LaunchModel.swift */; };
+		A976C8892818E8380083D8C6 /* ConfigStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A976C8882818E8380083D8C6 /* ConfigStorage.swift */; };
+		A976C88C2818E8790083D8C6 /* Config+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A976C88A2818E8790083D8C6 /* Config+CoreDataClass.swift */; };
+		A976C88D2818E8790083D8C6 /* Config+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A976C88B2818E8790083D8C6 /* Config+CoreDataProperties.swift */; };
+		A976C88F2818E8F00083D8C6 /* ConfigKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A976C88E2818E8F00083D8C6 /* ConfigKey.swift */; };
+		A976C8922818E9D30083D8C6 /* LSSLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = A976C8912818E9D30083D8C6 /* LSSLibrary */; };
+		A976C8992818FA010083D8C6 /* WebPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = A976C8942818FA010083D8C6 /* WebPages.swift */; };
+		A976C89A2818FA010083D8C6 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A976C8952818FA010083D8C6 /* Router.swift */; };
+		A976C89B2818FA010083D8C6 /* AuthInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A976C8962818FA010083D8C6 /* AuthInterceptor.swift */; };
+		A976C89C2818FA010083D8C6 /* APIEventLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A976C8972818FA010083D8C6 /* APIEventLogger.swift */; };
+		A976C89D2818FA010083D8C6 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A976C8982818FA010083D8C6 /* APIManager.swift */; };
+		A976C89F2818FA480083D8C6 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A976C89E2818FA480083D8C6 /* AppConstant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A95DE36A28190F3000B4C86E /* BoardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardListView.swift; sourceTree = "<group>"; };
+		A95DE36C28190F4700B4C86E /* BoardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardModel.swift; sourceTree = "<group>"; };
 		A976C84B2818E5DB0083D8C6 /* VBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A976C84E2818E5DB0083D8C6 /* VBoardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VBoardApp.swift; sourceTree = "<group>"; };
 		A976C8502818E5DB0083D8C6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +67,21 @@
 		A976C86A2818E5DC0083D8C6 /* VBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VBoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A976C86E2818E5DC0083D8C6 /* VBoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VBoardUITests.swift; sourceTree = "<group>"; };
 		A976C8702818E5DC0083D8C6 /* VBoardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VBoardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A976C87D2818E5FA0083D8C6 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		A976C87F2818E76C0083D8C6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A976C8832818E7880083D8C6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		A976C8852818E7A80083D8C6 /* LaunchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchModel.swift; sourceTree = "<group>"; };
+		A976C8882818E8380083D8C6 /* ConfigStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigStorage.swift; sourceTree = "<group>"; };
+		A976C88A2818E8790083D8C6 /* Config+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Config+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A976C88B2818E8790083D8C6 /* Config+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Config+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A976C88E2818E8F00083D8C6 /* ConfigKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigKey.swift; sourceTree = "<group>"; };
+		A976C8942818FA010083D8C6 /* WebPages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebPages.swift; sourceTree = "<group>"; };
+		A976C8952818FA010083D8C6 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		A976C8962818FA010083D8C6 /* AuthInterceptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthInterceptor.swift; sourceTree = "<group>"; };
+		A976C8972818FA010083D8C6 /* APIEventLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIEventLogger.swift; sourceTree = "<group>"; };
+		A976C8982818FA010083D8C6 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		A976C89E2818FA480083D8C6 /* AppConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		A976C8A0281904E70083D8C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A976C8922818E9D30083D8C6 /* LSSLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +133,15 @@
 		A976C84D2818E5DB0083D8C6 /* VBoard */ = {
 			isa = PBXGroup;
 			children = (
+				A976C8A0281904E70083D8C6 /* Info.plist */,
+				A976C8A128190EA40083D8C6 /* Board */,
+				A976C8932818F9F20083D8C6 /* NetWork */,
+				A976C8872818E8260083D8C6 /* Config */,
+				A976C8822818E77B0083D8C6 /* Main */,
 				A976C84E2818E5DB0083D8C6 /* VBoardApp.swift */,
+				A976C87D2818E5FA0083D8C6 /* LaunchView.swift */,
+				A976C8852818E7A80083D8C6 /* LaunchModel.swift */,
+				A976C8812818E7700083D8C6 /* Login */,
 				A976C8502818E5DB0083D8C6 /* ContentView.swift */,
 				A976C8522818E5DC0083D8C6 /* Assets.xcassets */,
 				A976C8572818E5DC0083D8C6 /* Persistence.swift */,
@@ -133,6 +176,55 @@
 			path = VBoardUITests;
 			sourceTree = "<group>";
 		};
+		A976C8812818E7700083D8C6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A976C87F2818E76C0083D8C6 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A976C8822818E77B0083D8C6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A976C8832818E7880083D8C6 /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A976C8872818E8260083D8C6 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				A976C89E2818FA480083D8C6 /* AppConstant.swift */,
+				A976C88A2818E8790083D8C6 /* Config+CoreDataClass.swift */,
+				A976C88B2818E8790083D8C6 /* Config+CoreDataProperties.swift */,
+				A976C8882818E8380083D8C6 /* ConfigStorage.swift */,
+				A976C88E2818E8F00083D8C6 /* ConfigKey.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		A976C8932818F9F20083D8C6 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				A976C8972818FA010083D8C6 /* APIEventLogger.swift */,
+				A976C8982818FA010083D8C6 /* APIManager.swift */,
+				A976C8962818FA010083D8C6 /* AuthInterceptor.swift */,
+				A976C8952818FA010083D8C6 /* Router.swift */,
+				A976C8942818FA010083D8C6 /* WebPages.swift */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		A976C8A128190EA40083D8C6 /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				A95DE36A28190F3000B4C86E /* BoardListView.swift */,
+				A95DE36C28190F4700B4C86E /* BoardModel.swift */,
+			);
+			path = Board;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,6 +241,9 @@
 			dependencies = (
 			);
 			name = VBoard;
+			packageProductDependencies = (
+				A976C8912818E9D30083D8C6 /* LSSLibrary */,
+			);
 			productName = VBoard;
 			productReference = A976C84B2818E5DB0083D8C6 /* VBoard.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +316,9 @@
 				Base,
 			);
 			mainGroup = A976C8422818E5DB0083D8C6;
+			packageReferences = (
+				A976C8902818E9D30083D8C6 /* XCRemoteSwiftPackageReference "LSSLibrary" */,
+			);
 			productRefGroup = A976C84C2818E5DB0083D8C6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -263,10 +361,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A976C8862818E7A80083D8C6 /* LaunchModel.swift in Sources */,
+				A976C8892818E8380083D8C6 /* ConfigStorage.swift in Sources */,
+				A976C8992818FA010083D8C6 /* WebPages.swift in Sources */,
+				A976C8802818E76C0083D8C6 /* LoginView.swift in Sources */,
+				A976C8842818E7880083D8C6 /* MainView.swift in Sources */,
+				A976C88D2818E8790083D8C6 /* Config+CoreDataProperties.swift in Sources */,
+				A95DE36B28190F3000B4C86E /* BoardListView.swift in Sources */,
+				A976C88F2818E8F00083D8C6 /* ConfigKey.swift in Sources */,
+				A95DE36D28190F4700B4C86E /* BoardModel.swift in Sources */,
 				A976C8582818E5DC0083D8C6 /* Persistence.swift in Sources */,
+				A976C87E2818E5FA0083D8C6 /* LaunchView.swift in Sources */,
+				A976C89F2818FA480083D8C6 /* AppConstant.swift in Sources */,
 				A976C85B2818E5DC0083D8C6 /* VBoard.xcdatamodeld in Sources */,
+				A976C89A2818FA010083D8C6 /* Router.swift in Sources */,
+				A976C89C2818FA010083D8C6 /* APIEventLogger.swift in Sources */,
+				A976C89D2818FA010083D8C6 /* APIManager.swift in Sources */,
 				A976C8512818E5DB0083D8C6 /* ContentView.swift in Sources */,
+				A976C89B2818FA010083D8C6 /* AuthInterceptor.swift in Sources */,
 				A976C84F2818E5DB0083D8C6 /* VBoardApp.swift in Sources */,
+				A976C88C2818E8790083D8C6 /* Config+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,8 +539,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"VBoard/Preview Content\"";
+				DEVELOPMENT_TEAM = HA4DY673VG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VBoard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -453,8 +569,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"VBoard/Preview Content\"";
+				DEVELOPMENT_TEAM = HA4DY673VG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VBoard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -585,6 +703,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A976C8902818E9D30083D8C6 /* XCRemoteSwiftPackageReference "LSSLibrary" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vituscokr/LSSLibrary.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A976C8912818E9D30083D8C6 /* LSSLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A976C8902818E9D30083D8C6 /* XCRemoteSwiftPackageReference "LSSLibrary" */;
+			productName = LSSLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		A976C8592818E5DC0083D8C6 /* VBoard.xcdatamodeld */ = {
