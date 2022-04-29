@@ -78,6 +78,7 @@ extension LaunchModel  {
         ConfigStorage.shared.delete(key: ConfigKey.userId.rawValue)
         ConfigStorage.shared.delete(key: ConfigKey.refreshToken.rawValue)
         
+        self.isLogin = false 
         
         
     }

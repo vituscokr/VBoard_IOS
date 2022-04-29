@@ -40,11 +40,11 @@ class APIEventLogger : EventMonitor {
             return
         }
         
-//        Debug.log("🛰 NETWORK Response LOG")
-//        Debug.log("URL: " + (request.request?.url?.absoluteString ?? ""))
-//        Debug.log("Result: " + "\(response.result)")
-//        Debug.log("StatusCode: " + "\(response.response?.statusCode ?? 0)" )
-//        Debug.log("Data: \(response.data?.toPrettyPrintedString ?? "")")
+        Debug.log("🛰 NETWORK Response LOG")
+        Debug.log("URL: " + (request.request?.url?.absoluteString ?? ""))
+        Debug.log("Result: " + "\(response.result)")
+        Debug.log("StatusCode: " + "\(response.response?.statusCode ?? 0)" )
+        Debug.log("Data: \(response.data?.toPrettyPrintedString ?? "")")
         
     }
     

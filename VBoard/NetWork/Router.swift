@@ -18,6 +18,8 @@ enum Router : URLConvertible {
     case postLogin
     case patchToken
     case getBoardList
+    case deleteBoard(String)
+    case postBoard
     
     
     var path : String {
@@ -25,6 +27,8 @@ enum Router : URLConvertible {
         case .postLogin: return "/login"
         case .patchToken: return "/token"
         case .getBoardList: return "/board"
+        case .deleteBoard(let id) : return "/board/\(id)"
+        case .postBoard: return "/board"
         }
     }
     
@@ -33,6 +37,8 @@ enum Router : URLConvertible {
         case .postLogin: return .post
         case .patchToken: return .patch
         case .getBoardList: return .get
+        case .deleteBoard(_) : return .delete
+        case .postBoard: return .post
         }
     }
     
@@ -45,7 +51,8 @@ enum Router : URLConvertible {
     
     var encoding : ParameterEncoding {
         switch(self) {
-        case .postLogin:
+        case .postLogin,
+            .postBoard:
             return JSONEncoding.default
         default:
             return URLEncoding.default

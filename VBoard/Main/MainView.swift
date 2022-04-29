@@ -38,10 +38,18 @@ struct MainView: View {
                 }
                 
                 
+                Button(action: logout) {
+                    Text("로그아웃")
+                }
                 
                 
             }
         }
+    }
+    
+    func logout() {
+        LaunchModel.shared.logout()
+        
     }
 }
 

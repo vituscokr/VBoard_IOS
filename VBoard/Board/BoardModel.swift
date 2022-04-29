@@ -18,6 +18,10 @@ struct Metadata :Codable {
     
 }
 
+
+struct ResponseOK: Codable {
+    var success: Bool
+}
 struct APIResponseList  :Codable{
     var metadata:Metadata
     var items : [Board]
@@ -27,7 +31,7 @@ struct Board:Identifiable,  Codable {
 
     var id : Int
     var subject : String
-    
+    var content: String 
 //    enum CodingKey
     
     
@@ -100,4 +104,63 @@ class BoardModel : ObservableObject {
         
     }
     
+}
+
+
+extension BoardModel {
+    
+    func delete (item: Board)  {
+        
+        
+        let id = item.id
+        let publisher : AnyPublisher<ResponseOK, RequestError> = Router.deleteBoard(String(id)).fetch()
+        
+        publisher
+            .sink { completion in
+                switch(completion) {
+                case .failure(let error):
+                    Debug.log(error)
+                case .finished:
+                    Debug.log("success")
+                }
+                self.loadData()
+                
+            } receiveValue: { response in
+                
+                
+                Debug.log(response)
+            }
+            .store(in: &disposeBag)
+
+        
+        
+    }
+    
+    func add(board: Board) {
+        
+        let arg = [
+            "subject" : board.subject ,
+            "content": board.content
+        ]
+        
+        let publisher : AnyPublisher<Board, RequestError> = Router.postBoard.fetch(parameters: arg)
+        
+        publisher
+            .sink { completion in
+                switch(completion) {
+                case .failure(let error):
+                    Debug.log(error)
+                case .finished:
+                    Debug.log("success")
+                }
+                self.loadData()
+                
+            } receiveValue: { response in
+                
+                
+                Debug.log(response)
+            }
+            .store(in: &disposeBag)
+        
+    }
 }

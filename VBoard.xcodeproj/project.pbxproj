@@ -38,6 +38,7 @@
 		A98F8F7A281A2CAE009413EA /* MovieAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98F8F79281A2CAE009413EA /* MovieAPI.swift */; };
 		A98F8F7D281A6A88009413EA /* BarcodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98F8F7C281A6A88009413EA /* BarcodeView.swift */; };
 		A98F8F81281A866A009413EA /* CouponBarCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98F8F80281A866A009413EA /* CouponBarCodeView.swift */; };
+		A9C033E3281BD7750028D8C0 /* BoardAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C033E2281BD7750028D8C0 /* BoardAddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		A98F8F79281A2CAE009413EA /* MovieAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAPI.swift; sourceTree = "<group>"; };
 		A98F8F7C281A6A88009413EA /* BarcodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeView.swift; sourceTree = "<group>"; };
 		A98F8F80281A866A009413EA /* CouponBarCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponBarCodeView.swift; sourceTree = "<group>"; };
+		A9C033E2281BD7750028D8C0 /* BoardAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardAddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				A95DE36A28190F3000B4C86E /* BoardListView.swift */,
+				A9C033E2281BD7750028D8C0 /* BoardAddView.swift */,
 				A95DE36C28190F4700B4C86E /* BoardModel.swift */,
 			);
 			path = Board;
@@ -393,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A98F8F78281A1B1F009413EA /* MovieModel.swift in Sources */,
+				A9C033E3281BD7750028D8C0 /* BoardAddView.swift in Sources */,
 				A98F8F7A281A2CAE009413EA /* MovieAPI.swift in Sources */,
 				A976C8862818E7A80083D8C6 /* LaunchModel.swift in Sources */,
 				A976C8892818E8380083D8C6 /* ConfigStorage.swift in Sources */,
