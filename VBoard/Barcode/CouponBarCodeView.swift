@@ -54,7 +54,7 @@ struct CouponBarCodeView: View {
                             .foregroundColor(Color.gray) //graydark3
                         }
                         
-                        VStack(spacing: 4) {
+                        VStack(spacing: 9) {
                             Text("오프라인 사용처")
                                 .font(.system(size: 12, weight: .medium, design: .default))
                                 .foregroundColor(Color.gray) //mainpink_dark

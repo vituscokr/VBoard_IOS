@@ -38,7 +38,6 @@
 		A98F8F7A281A2CAE009413EA /* MovieAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98F8F79281A2CAE009413EA /* MovieAPI.swift */; };
 		A98F8F7D281A6A88009413EA /* BarcodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98F8F7C281A6A88009413EA /* BarcodeView.swift */; };
 		A98F8F81281A866A009413EA /* CouponBarCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98F8F80281A866A009413EA /* CouponBarCodeView.swift */; };
-		A98F8F83281A86DA009413EA /* LSSButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98F8F82281A86DA009413EA /* LSSButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,7 +92,6 @@
 		A98F8F79281A2CAE009413EA /* MovieAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAPI.swift; sourceTree = "<group>"; };
 		A98F8F7C281A6A88009413EA /* BarcodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeView.swift; sourceTree = "<group>"; };
 		A98F8F80281A866A009413EA /* CouponBarCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponBarCodeView.swift; sourceTree = "<group>"; };
-		A98F8F82281A86DA009413EA /* LSSButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSSButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,7 +250,6 @@
 		A98F8F7B281A6A5D009413EA /* Barcode */ = {
 			isa = PBXGroup;
 			children = (
-				A98F8F82281A86DA009413EA /* LSSButtonStyle.swift */,
 				A98F8F7C281A6A88009413EA /* BarcodeView.swift */,
 				A98F8F80281A866A009413EA /* CouponBarCodeView.swift */,
 			);
@@ -395,7 +392,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A98F8F83281A86DA009413EA /* LSSButtonStyle.swift in Sources */,
 				A98F8F78281A1B1F009413EA /* MovieModel.swift in Sources */,
 				A98F8F7A281A2CAE009413EA /* MovieAPI.swift in Sources */,
 				A976C8862818E7A80083D8C6 /* LaunchModel.swift in Sources */,

@@ -48,6 +48,9 @@ class BoardModel : ObservableObject {
     }
     
     func loadData() {
+        Debug.log("loadData")
+        
+        
         items.removeAll()
         page = 1
         fetch()
@@ -72,7 +75,7 @@ class BoardModel : ObservableObject {
         let publisher : AnyPublisher <APIResponseList , RequestError> = Router.getBoardList.fetch(parameters: arg)
         
         publisher
-            .receive(on: DispatchQueue.main)
+
 //            .handleEvents(receiveOutput: { response in
 //                Debug.log(response)
 //            })
