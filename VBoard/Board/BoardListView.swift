@@ -19,10 +19,16 @@ struct BoardListView: View {
                 
                 
                 ForEach(model.items) { item in
+                    NavigationLink {
+                        BoardAddView( item: item )
+                            .environmentObject(model )
+                    } label: {
                     Text(item.subject)
                         .onAppear {
+                            model.loadMoreIfNeeded(currnetItem: item) 
                             //model.loadMoreContentIfNeeded(currentItem: item)
                         }
+                    }
                 }
                 .onDelete(perform: delete )
                 

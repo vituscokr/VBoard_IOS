@@ -27,7 +27,7 @@ struct APIResponseList  :Codable{
     var items : [Board]
 }
 
-struct Board:Identifiable,  Codable {
+struct Board:Identifiable,  Codable , Equatable{
 
     var id : Int
     var subject : String
@@ -44,6 +44,7 @@ class BoardModel : ObservableObject {
     
     var page : Int = 1
     var per : Int = 10
+    var isAnyMore: Bool = true
     
     private var disposeBag = Set<AnyCancellable>()
     
@@ -58,6 +59,16 @@ class BoardModel : ObservableObject {
         items.removeAll()
         page = 1
         fetch()
+    }
+    
+    func loadMoreIfNeeded(currnetItem: Board) {
+        
+        if items.last == currnetItem {
+            
+            if isAnyMore {
+                loadMore()
+            }
+        }
     }
     
     func loadMore() {
@@ -97,6 +108,13 @@ class BoardModel : ObservableObject {
                 Debug.log(response)
                 Debug.log(response.metadata)
                 Debug.log(response.items)
+                
+                
+                if response.items.count < self.per {
+                    self.isAnyMore = false
+                }else {
+                    self.isAnyMore = true
+                }
                 
                 self.items += response.items
             })
@@ -144,6 +162,36 @@ extension BoardModel {
         ]
         
         let publisher : AnyPublisher<Board, RequestError> = Router.postBoard.fetch(parameters: arg)
+        
+        publisher
+            .sink { completion in
+                switch(completion) {
+                case .failure(let error):
+                    Debug.log(error)
+                case .finished:
+                    Debug.log("success")
+                }
+                self.loadData()
+                
+            } receiveValue: { response in
+                
+                
+                Debug.log(response)
+            }
+            .store(in: &disposeBag)
+        
+    }
+    
+    func update(board:Board) {
+        
+        
+        let arg = [
+            "subject" : board.subject ,
+            "content": board.content
+        ]
+        
+        
+        let publisher : AnyPublisher<Board, RequestError> = Router.patchBoard("\(board.id)").fetch(parameters: arg)
         
         publisher
             .sink { completion in

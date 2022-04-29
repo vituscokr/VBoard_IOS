@@ -10,6 +10,9 @@ import SwiftUI
 struct BoardAddView: View {
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var model : BoardModel
+    
+    var item : Board?
+    
     @State var subject = ""
     @State var content = ""
     var body: some View {
@@ -23,8 +26,20 @@ struct BoardAddView: View {
             Spacer()
             Button(action : {
                 
-                let board = Board(id: 0, subject: subject, content: content)
+                
+                if item == nil {
+                
+                    let board = Board(id: 0, subject: subject, content: content)
                 model.add(board: board)
+                }else {
+                    guard  let id = item?.id else {
+                        return 
+                    }
+                    let board = Board(id: id,
+                                      subject : subject,
+                                      content: content)
+                    model.update(board: board)
+                }
                 
                 self.presentationMode.wrappedValue.dismiss()
             }) {
@@ -35,8 +50,21 @@ struct BoardAddView: View {
             
            
         }
+        .onAppear(perform: load)
         
        
+    }
+    
+    func load() {
+        
+        if item != nil {
+            
+            guard let item = item else {
+                return
+            }
+            subject = item.subject
+            content = item.content
+        }
     }
 }
 
